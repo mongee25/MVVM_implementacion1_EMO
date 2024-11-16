@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using MVVM_implementacion_EMO.Modelo;
 using Xamarin.Forms;
 
@@ -43,6 +46,15 @@ namespace MVVM_implementacion_EMO.VistaModelo
                 }
             };
         }
+        public async Task Alerta(Musuarios parametros)
+        {
+            await DisplayAlert("Titulo", parametros.Nombre, "Ok");
+        }
+        #endregion
+
+        #region COMANDOS
+        //public ICommand VolverCommand => new Command(async () => await Volver());
+        public ICommand AlertaCommand => new Command<Musuarios>(async (p) => await Alerta(p));
         #endregion
     }
 }
