@@ -13,36 +13,36 @@ namespace MVVM_implementacion_EMO.VistaModelo
     {
         #region VARIABLES
         string _Texto;
-        public List<Mmenuprincipal> listausuarios { get; set; }
+        public List<Mmenuprincipal> listapaginas { get; set; }
         #endregion
 
         #region CONSTRUCTOR
         public VMmenuprincipal(INavigation navigation)
         {
             Navigation = navigation;
-            MostrarUsuarios();
+            MostrarPaginas();
         }
         #endregion
 
         #region PROCESOS
-        public void MostrarUsuarios()
+        public void MostrarPaginas()
         {
-            listausuarios = new List<Mmenuprincipal>
+            listapaginas = new List<Mmenuprincipal>
             {
                 new Mmenuprincipal
                 {
                     Pagina = "Entry, datepicker, picker, label, navegación",
-                    Icono = "https://i.ibb.co/d66dbG9/charizard.png"
+                    Icono = "https://i.postimg.cc/vTTCbtxT/navegacion.gif"
                 },
                 new Mmenuprincipal
                 {
                     Pagina = "CollectionView sin enlace a Base de datos",
-                    Icono = "https://i.postimg.cc/DZrF7vWS/pikachu.png"
+                    Icono = "https://i.postimg.cc/pLzYh5Dd/base-de-datos.gif"
                 },
                 new Mmenuprincipal
                 {
                     Pagina = "Crud pokemon",
-                    Icono = "https://i.postimg.cc/2St2Snvt/thumbnail.png"
+                    Icono = "https://i.postimg.cc/DZrF7vWS/pikachu.png"
                 }
             };
         }
