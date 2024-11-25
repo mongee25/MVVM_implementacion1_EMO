@@ -57,10 +57,6 @@ namespace MVVM_implementacion_EMO.VistaModelo
         #endregion
 
         #region PROCESOS
-        public async Task Proecsoasync()
-        {
-          
-        }
         public async Task NavegarPagina2()
         {
             await Navigation.PushAsync(new pagina2());
@@ -81,7 +77,6 @@ namespace MVVM_implementacion_EMO.VistaModelo
         #endregion
 
         #region COMANDOS
-        public ICommand AlertaCommand => new Command(async () => await Proecsoasync());
         public ICommand Suymarcommand => new Command(Sumar);
         public ICommand PNavegarPagina2command => new Command(async () => await NavegarPagina2());
         #endregion

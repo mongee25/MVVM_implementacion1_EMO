@@ -10,8 +10,7 @@ namespace MVVM_implementacion_EMO
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new Menuprincipal());
+            MainPage = new NavigationPage(new pagina1());
         }
 
         protected override void OnStart()

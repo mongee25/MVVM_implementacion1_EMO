@@ -50,10 +50,15 @@ namespace MVVM_implementacion_EMO.VistaModelo
         {
             await DisplayAlert("Titulo", parametros.Nombre, "Ok");
         }
+
+        public async Task Volver()
+        {
+            await Navigation.PopAsync();
+        }
         #endregion
 
         #region COMANDOS
-        //public ICommand VolverCommand => new Command(async () => await Volver());
+        public ICommand VolverCommand => new Command(async () => await Volver());
         public ICommand AlertaCommand => new Command<Musuarios>(async (p) => await Alerta(p));
         #endregion
     }
