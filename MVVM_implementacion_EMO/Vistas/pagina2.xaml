@@ -4,7 +4,7 @@
              x:Class="MVVM_implementacion_EMO.Vistas.pagina2"
              NavigationPage.HasNavigationBar="False">
     <Grid>
-        <Image Source="flecha-izquierda.png"
+        <Image Source="flechaizquierda.png"
                VerticalOptions="Start"
                HeightRequest="50"
                HorizontalOptions="Start"
